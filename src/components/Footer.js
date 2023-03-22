@@ -27,7 +27,7 @@ export default function Footer() {
                 </div>
                 <div className="footerLogo">
                     <a href="https://github.com/yoyochen68"><img src="../img/gitHub.png" className="sitelogo" alt="logo" /></a>
-                    <a href="https://www.linkedin.com/in/yanyan-chen-yoyo/"><img src="../img/linkedin.png" className="sitelogo" alt="logo" /></a>
+                    <a href="https://www.linkedin.com/in/yanyan-chen-yoyo/"><img src="../img/linkedIn.png" className="sitelogo" alt="logo" /></a>
                     <a href="mailto:yoyochen2019@yahoo.ca?Subject=I%20want%20to%20connect"><img src="../img/email.png" className="sitelogo" alt="logo" /></a>
                     
                 </div>

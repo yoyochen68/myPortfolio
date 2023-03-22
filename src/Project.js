@@ -21,7 +21,7 @@ const Project = () => {
                         {title}
                         <div>
                             {gitHubLink && <a href={gitHubLink}><img src="../img/gitHub.png" className="linklogo" alt="logo" /></a>}
-                            {websiteLink && <a href={websiteLink}><img src="../img/internet.png" className="linklogo" alt="logo" /></a>}
+                            {websiteLink && <a href={websiteLink}><img src="../img/Internet.png" className="linklogo" alt="logo" /></a>}
                             {figmaLink && <a href={figmaLink}><img src="../img/figmaLink.png" className="linklogo" alt="logo" /></a>}
                         </div>
                     </div>
