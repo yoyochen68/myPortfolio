@@ -80,13 +80,12 @@
 
 .mylogoBox {
   background-color: transparent;
-  padding:0
+  padding: 0;
 }
-
 
 @media screen and (max-width: 900px) {
   .menuBar {
-    width: 50%
+    width: 50%;
   }
   .myLogo {
     width: 5rem;
@@ -94,8 +93,6 @@
     padding-left: 0.7rem;
   }
 }
-  
-
 
 /* FOOTER COMPONENT */
 .footer {
@@ -123,8 +120,6 @@
     width: 40%;
   }
 }
-  
-
 
 .footerLogo {
   display: flex;
@@ -288,8 +283,6 @@
   background-color: rgba(67, 67, 98, 0.7);
   /* width: 90%; */
   height: auto;
-  /* border-radius: 20px; */
-
   box-shadow: rgba(146, 133, 209, 0.25) 0px 4px 15px;
   /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
 }
@@ -365,8 +358,6 @@
   margin: 1rem;
 }
 
-
-
 .funfactTitle {
   font-size: 2rem;
   color: #6551c8;
@@ -416,12 +407,11 @@
   .selfImg {
     width: 300px;
     height: 180px;
-    margin:5vh auto;
+    margin: 5vh auto;
   }
-  .techBox{
-  grid-template-columns: 1fr 1fr 1fr ;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
+  .techBox {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -508,12 +498,10 @@
 }
 
 @media screen and (max-width: 768px) {
-  .signleProjectBox{
+  .signleProjectBox {
     flex-direction: column;
   }
-
 }
-
 
 .vertical {
   display: grid;
@@ -895,69 +883,67 @@ span:nth-child(2) {
   animation-duration: 2s;
 }
 
-span:nth-child(1){
-    top: 0;
-    right: 0px;
-    left: initial;
-    animation-delay: 1s;
-    animation-duration: 0.8s;
+span:nth-child(1) {
+  top: 0;
+  right: 0px;
+  left: initial;
+  animation-delay: 1s;
+  animation-duration: 0.8s;
 }
 
-span:nth-child(3){
-    top: 80;
-    right: 100px;
-    left: initial;
-    animation-delay: 0.4s;
-    animation-duration: 2s;
-} 
-span:nth-child(4){
-    top: 0;
-    right: 180px;
-    left: initial;
-    animation-delay: 0.6s;
-    animation-duration: 1.5s;
+span:nth-child(3) {
+  top: 80;
+  right: 100px;
+  left: initial;
+  animation-delay: 0.4s;
+  animation-duration: 2s;
 }
-span:nth-child(5){
-    top: 0;
-    right: 400px;
-    left: initial;
-    animation-delay: 0.8s;
-    animation-duration: 2.5s;
+span:nth-child(4) {
+  top: 0;
+  right: 180px;
+  left: initial;
+  animation-delay: 0.6s;
+  animation-duration: 1.5s;
 }
-span:nth-child(6){
-    top: 0;
-    right: 600px;
-    left: initial;
-    animation-delay: 1s;
-    animation-duration: 3s;
+span:nth-child(5) {
+  top: 0;
+  right: 400px;
+  left: initial;
+  animation-delay: 0.8s;
+  animation-duration: 2.5s;
 }
-span:nth-child(7){
-    top: 300px;
-    right: 0px;
-    left: initial;
-    animation-delay: 1.2s;
-    animation-duration: 1.75s;
+span:nth-child(6) {
+  top: 0;
+  right: 600px;
+  left: initial;
+  animation-delay: 1s;
+  animation-duration: 3s;
 }
-span:nth-child(8){
-    top: 0px;
-    right: 700px;
-    left: initial;
-    animation-delay: 1.4s;
-    animation-duration: 1.25s;
+span:nth-child(7) {
+  top: 300px;
+  right: 0px;
+  left: initial;
+  animation-delay: 1.2s;
+  animation-duration: 1.75s;
 }
-span:nth-child(9){
-    top: 0px;
-    right: 1000px;
-    left: initial;
-    animation-delay: 0.75s;
-    animation-duration: 2.25s;
+span:nth-child(8) {
+  top: 0px;
+  right: 700px;
+  left: initial;
+  animation-delay: 1.4s;
+  animation-duration: 1.25s;
 }
-span:nth-child(9){
-    top: 0px;
-    right: 450px;
-    left: initial;
-    animation-delay: 2.75s;
-    animation-duration: 2.75s;
-} 
-
-
+span:nth-child(9) {
+  top: 0px;
+  right: 1000px;
+  left: initial;
+  animation-delay: 0.75s;
+  animation-duration: 2.25s;
+}
+span:nth-child(9) {
+  top: 0px;
+  right: 450px;
+  left: initial;
+  animation-delay: 2.75s;
+  animation-duration: 2.75s;
+}
