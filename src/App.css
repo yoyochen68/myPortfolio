@@ -609,8 +609,7 @@
   transform: rotateZ(45deg);
 }
 
-
-.errorPage{
+.errorPage {
   display: block;
   justify-content: center;
   align-items: center;
@@ -622,17 +621,15 @@
   background-size: cover;
   background-position: center;
   overflow: auto;
-
 }
 
-.errorPage h1{
+.errorPage h1 {
   font-size: 2rem;
   color: #ffff66;
   font-weight: bolder;
   font-family: starEmpty;
   margin-top: 5rem;
 }
-
 
 /* Here we are making roundabout balls  */
 .star {
@@ -972,4 +969,12 @@ span:nth-child(9) {
   animation-duration: 2.75s;
 }
 
+.siteEmailLogo {
 
+  /* border:3px solid #fff; */
+
+  width: 30px;
+  height: 30px;
+  margin-left:15px
+
+}
