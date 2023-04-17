@@ -111,7 +111,7 @@ const projectsData = [
     },
     {
         id: "3",
-        title: "CodeSnippet",
+        title: "Code Snippet",
         introduction: "Code Snippet is a web application designed for users to easily post and share their programming code snippets with others.",
         description: ["Code Snippet is a web application designed for users to easily post and share their programming code snippets with others. In addition, it also allows users to like and comment on posts, creating a collaborative environment for the programming community.", "One of the features of Code Snippet is that it allows users to access their own posts and comments by visiting their profile. This allows users to easily manage their coding solutions and engage with their followers.", "To ensure a secure and seamless user experience, the app leverages NextAuth, an open-source authentication library, to provide secure login options for users. With NextAuth, users can easily and securely login to their Code Snippet account through Google or GitHub account."],
         gitHubLink: "https://github.com/yoyochen68/CodeSnippet",

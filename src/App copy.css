@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Rosarivo&family=Work+Sans:wght@200&display=swap');
 
-html {
-  background: url('/public/img/homeBg1.png') no-repeat center center fixed;
+html { 
+  background: url('/public/img/homeBg1.png') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+
+
 
 * {
   color: #ffffff;
@@ -59,7 +61,7 @@ html {
   right: 6rem;
   justify-content: space-around;
   align-items: center;
-  width: 40vw;
+  width: 28%;
   padding: auto;
   margin: auto;
   font-size: 1rem;
@@ -81,10 +83,9 @@ html {
 
 .myLogo {
   display: flex;
-  /* width: 7rem; */
-  width: 8vw;
-  padding-top: 3vw;
-  padding-left: 0.7vw;
+  width: 7rem;
+  padding-top: 3rem;
+  padding-left: 0.7rem;
 }
 
 .mylogoBox {
@@ -103,32 +104,33 @@ html {
   }
 } */
 
-@media screen and (max-width: 768px) {
+/* Media query for mobile devices */
+/* @media (max-width: 768px) {
   .menuBar {
-    right: 2rem;
-    width: 55%;
-    padding: auto;
-    margin: auto;
-    font-size: 0.8rem;
+    display: none;
   }
 
-  .link {
-    color: #e7e763;
-    text-decoration: none;
-    cursor: pointer;
-    padding: auto;
-  }
-
-  .active {
-    padding: 3px 8px;
+  .header {
+    justify-content: center;
   }
 
   .myLogo {
-    width: 4.5rem;
-    padding-top: 1vw;
-    padding-left: 0.5vw;
+    padding-top: 2.5rem;
+    padding-left: 0;
   }
 }
+
+/* Media query for tablet devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .menuBar {
+    right: 4rem;
+    width: 40%;
+  }
+
+  .myLogo {
+    padding-top: 2.5rem;
+  }
+} */
 
 /* FOOTER COMPONENT */
 .footer {
@@ -144,11 +146,17 @@ html {
   position: absolute;
   justify-content: space-between;
   align-items: center;
-  width: 28vw;
+  width: 20%;
   height: 100%;
   left: 6%;
   font-family: starSolid, playfair display;
   font-size: 0.8rem;
+}
+
+@media screen and (max-width: 900px) {
+  .footerMenu {
+    width: 40%;
+  }
 }
 
 .footerLogo {
@@ -163,10 +171,8 @@ html {
 }
 
 .sitelogo {
-  /* width: 40px;
-  height: 40px; */
-  width: 3vw;
-  height: 3vw;
+  width: 40px;
+  height: 40px;
 }
 
 .footerText {
@@ -182,51 +188,8 @@ html {
   margin: 0 0 5px 0;
 }
 
-@media screen and (max-width: 768px) {
-  .footerMenu {
-    display: flex;
-    position: absolute;
-    justify-content: space-between;
-    align-items: center;
-    width: 40%;
-    height: 100%;
-    left: 5%;
-    font-family: starSolid, playfair display;
-    font-size: 0.7rem;
-    gap: 0.8rem;
-  }
-
-  .footerLogo {
-    display: flex;
-    position: absolute;
-    height: 100%;
-    width: 8rem;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 1rem;
-    right: 5%;
-  }
-
-  .sitelogo {
-    width: 1.7rem;
-    height: 1.7rem;
-  }
-
-  .footerText {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-bottom: 0.5rem;
-    font-size: 0.5rem;
-    margin: 5px 0 3px 0;
-  }
-}
-
 /* HOME PAGE */
+
 .home {
   display: flex;
   height: 100vh;
@@ -234,7 +197,7 @@ html {
   /* background-image: url('/public/img/homeBg1.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;  */
+  background-position: center; */
 }
 
 .homeSection {
@@ -248,8 +211,8 @@ html {
 }
 
 .introText {
-  /* font-size: 2.2vw; */
   font-size: 2rem;
+  color: #e5e5d5;
   color: #e9e98f;
   font-weight: bolder;
   padding-right: 1rem;
@@ -261,15 +224,8 @@ html {
   font-family: Comfortaa;
   color: #e5e5d5;
   color: #f7f7f7;
-  font-size: 1.6vw;
-  /* font-size: 1.5rem; */
+  font-size: 1.5rem;
   padding-right: 1rem;
-}
-
-.siteEmailLogo {
-  width: 2.3rem;
-  height: 2.3rem;
-  margin-left: 0.5rem;
 }
 
 @media screen and (min-width: 1500px) {
@@ -285,45 +241,36 @@ html {
   }
 }
 
+
 @media screen and (max-width: 768px) {
-  html {
-    background-position: 30%;
-  }
+/* .home {
+  display: flex;
+  max-height: 100vh;
+  max-width: 100vw;
+  background-image: url('/public/img/homeBg1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
-  .homeSection {
-    position: absolute;
-    text-align: left;
-    top: 20%;
-    left: 35vw;
-    width: 60vw;
-    margin-right: 5vw;
-    transition: font-size 0.5s ease-in-out;
-  }
-
-  .introText {
-    font-size: 1.1rem;
-    font-weight: bolder;
-    padding-right: 1rem;
-  }
-
-  .desText {
-    /* font-family: playfair display; */
-    font-family: Comfortaa;
-    color: #e5e5d5;
-    color: #f7f7f7;
-    font-size: 0.9rem;
-    font-weight: 600;
-    padding-right: 1rem;
-  }
-
-  .siteEmailLogo {
-    width: 1.2rem;
-    height: 1.2rem;
-    margin-left: 0.5rem;
-  }
 }
 
-/* PROJECTS PAGE */
+.introText {
+  font-size: 1rem;
+  color: #e5e5d5;
+  color: #e9e98f;
+  font-weight: bolder;
+  padding-right: 1rem;
+  font-family: starEmpty;
+} */
+
+
+
+}
+
+
+
+
+/* PROJeCTS PAGE */
 
 .projects,
 .about,
@@ -406,40 +353,8 @@ html {
   /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
 }
 
-@media screen and (max-width: 768px) {
-  .projectsSection {
-    margin: auto;
-    width: 85vw;
-  }
-
-  .projectsSection > p {
-    font-size: 1.5rem;
-    color: #6551c8;
-    font-weight: bolder;
-    font-family: starEmpty;
-    margin: 6rem auto 0 auto;
-  }
-
-  .projectsInfo {
-    display: block;
-  }
-
-  .projectBox {
-    margin: 3rem;
-  }
-
-  .projectBox h2 {
-    font-size: 1.2rem;
-    padding-top: 1rem;
-  }
-
-  .projectBox p {
-    font-size: 1rem;
-    padding: 0.8rem;
-  }
-}
-
 /* ABOUT PAGE */
+
 .aboutSection {
   display: block;
   /* color: #ffffff; */
@@ -489,6 +404,7 @@ html {
   /* margin: 0; */
   padding: 1.5rem;
   border-radius: 0px 0px 20px 20px;
+
   box-shadow: rgba(146, 133, 209, 0.85) 0px 4px 12px;
 }
 
@@ -497,15 +413,13 @@ html {
   justify-content: center;
   align-items: center;
   margin: 20vh auto;
-  width: 78%;
-  /* height: 50vh; */
+  width: 75%;
+  height: 50vh;
 }
 
 .selfImg {
-  /* width: 480px;
-  height: 300px; */
-  width: 38vw;
-  height: 23vw;
+  width: 480px;
+  height: 300px;
   border: 1px solid #ffffff;
   margin: 1rem;
 }
@@ -551,7 +465,7 @@ html {
   height: 2rem;
 }
 
-/* @media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .imgsect {
     display: block;
     height: 80vh;
@@ -564,75 +478,6 @@ html {
   .techBox {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-} */
-
-@media screen and (max-width: 768px) {
-  .aboutSection {
-    margin: 7rem auto;
-    width: 95vw;
-  }
-
-  .intro {
-    width: 85%;
-  }
-
-  .intro h1 {
-    font-size: 1.5rem;
-    color: #6551c8;
-    font-weight: bolder;
-    font-family: starEmpty;
-    padding: 1rem;
-  }
-
-  .aboutMe {
-    font-size: 1rem;
-    padding: 1rem;
-  }
-
-  .imgsect {
-    display: block;
-    margin: 5vh auto;
-    /* width: 75%; */
-    /* height: 50vh; */
-  }
-
-  .selfImg {
-    width: 60vw;
-    height: 38vw;
-  }
-
-  .funfactTitle {
-    font-size: 1.5rem;
-    margin-top: 2vw;
-  }
-
-  .funfact {
-    text-align: left;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    font-size: 1rem;
-    max-width: 90%;
-  }
-
-  .techSection {
-    margin: 5vh auto;
-    padding: 10px;
-    width: 80%;
-  }
-
-  .techBox {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 0.5rem;
-    width: 65vw;
-    font-size: 0.8rem;
-  }
-
-  .technologyLogo {
-    width: 30px;
-    height: 30px;
   }
 }
 
@@ -717,6 +562,12 @@ html {
   gap: 3rem;
 }
 
+@media screen and (max-width: 768px) {
+  .signleProjectBox {
+    flex-direction: column;
+  }
+}
+
 .vertical {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -724,7 +575,7 @@ html {
   /* justify-content: center;
   text-align: center; */
   /* margin: auto; */
-  gap: 2vw;
+  gap: 2rem;
 }
 
 .horizontal {
@@ -734,23 +585,19 @@ html {
   /* justify-content: center;
   text-align: center; */
   /* margin: auto; */
-  gap: 2vw;
+  gap: 2rem;
 }
 
 .verticalImg {
-  /* width: 130px;
-  height: 230px; */
-  width: 10vw;
-  height: 17vw;
+  width: 130px;
+  height: 230px;
   border: 1px solid #ffffff;
   cursor: pointer;
 }
 
 .horizontalImg {
-  /* height: 130px;
-  width: 230px; */
-  width: 14vw;
-  height: 8vw;
+  height: 130px;
+  width: 230px;
   border: 1px solid #ffffff;
   cursor: pointer;
 }
@@ -819,68 +666,15 @@ html {
   display: flex;
 }
 
-@media screen and (max-width: 768px) {
-  .signleProjectBox {
-    flex-direction: column;
-  }
-
-  .projectTitle {
-    font-size: 1.5rem;
-    color: #6551c8;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .linklogo {
-    width: 30px;
-    height: 30px;
-    margin: 0.5rem 1rem;
-  }
-
-  .verticalImg {
-    width: 23vw;
-    height: 40vw;
-  }
-
-  .description,
-  .skills {
-    font-size: 1rem;
-  }
-
-  .skillTitle {
-    font-size: 1.5rem;
-  }
-
-  .skill {
-    /* text-align: left; */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    font-size: 0.8rem;
-  }
-
-  .skillBox img {
-    width: 30px;
-    height: 30px;
-  }
-
-  .horizontal {
-    display: block;
-  }
-
-  .horizontalImg {
-    height: 40vw;
-    width: 60vw;
-    margin: 2vw;
-  }
-
-  .horizontalImg:hover {
-    transform: scale(1.3);
-    transition: 0.8s;
-  }
+/* home page shoting star */
+.sky {
+  position: relative;
+  width: 70vw;
+  height: 65vh;
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
 }
 
-/* error page */
 .errorPage {
   display: block;
   justify-content: center;
@@ -900,250 +694,223 @@ html {
   color: #ffff66;
   font-weight: bolder;
   font-family: starEmpty;
-  margin-top: 8em;
+  margin-top: 5rem;
 }
 
-.homepagebtn {
-  margin-top: 2rem;
-  background-color: #6551c8;
-  border: none;
-  border-radius: 2px;
-  font-size: 1.5rem;
-  font-weight: bolder;
-  font-family: starEmpty;
-  cursor: pointer;
-}
-
-.linktext {
-  text-decoration: none;
-}
-
-@media screen and (max-width: 768px) {
-  .homepagebtn {
-    font-size: 1.2rem;
-  }
-}
 
 @media screen and (min-width: 768px) {
-  /* home page shoting star */
-  .sky {
-    position: relative;
-    width: 70vw;
-    height: 65vh;
-    -webkit-transform: rotateZ(45deg);
-    transform: rotateZ(45deg);
-  }
 
-  /* Here we are making roundabout balls  */
-  .star {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    height: 2px;
-    border-radius: 885px;
-    background: linear-gradient(-45deg, #eef0f5, rgba(0, 0, 255, 0));
 
-    -webkit-filter: drop-shadow(0 0 6px #eef1f8);
-    filter: drop-shadow(0 0 6px #d7dff0);
-    -webkit-animation: tail 3000ms ease-in-out infinite,
-      shooting 3000ms ease-in-out infinite;
-    animation: tail 3000ms ease-in-out infinite,
-      shooting 3000ms ease-in-out infinite;
-  }
 
-  /* Here we add before and after effect to star */
-  .star::before,
-  .star::after {
-    content: '';
-    position: absolute;
-    top: calc(50% - 1px);
-    right: 0;
-    height: 2px;
-    background: linear-gradient(
-      -45deg,
-      rgba(0, 0, 255, 0),
-      #eaeef8,
-      rgba(0, 0, 255, 0)
-    );
-    -webkit-transform: translateX(50%) rotateZ(45deg);
-    transform: translateX(50%) rotateZ(45deg);
-    border-radius: 100%;
-    -webkit-animation: shining 3000ms ease-in-out infinite;
-    animation: shining 3000ms ease-in-out infinite;
-  }
-  .star::after {
-    -webkit-transform: translateX(50%) rotateZ(-45deg);
-    transform: translateX(50%) rotateZ(-45deg);
-  }
+/* Here we are making roundabout balls  */
+.star {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 2px;
+  border-radius: 885px;
+  background: linear-gradient(-45deg, #eef0f5, rgba(0, 0, 255, 0));
 
-  /* Here we are adding location of each 
+  -webkit-filter: drop-shadow(0 0 6px #eef1f8);
+  filter: drop-shadow(0 0 6px #d7dff0);
+  -webkit-animation: tail 3000ms ease-in-out infinite,
+    shooting 3000ms ease-in-out infinite;
+  animation: tail 3000ms ease-in-out infinite,
+    shooting 3000ms ease-in-out infinite;
+}
+
+/* Here we add before and after effect to star */
+.star::before,
+.star::after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 255, 0),
+    #eaeef8,
+    rgba(0, 0, 255, 0)
+  );
+  -webkit-transform: translateX(50%) rotateZ(45deg);
+  transform: translateX(50%) rotateZ(45deg);
+  border-radius: 100%;
+  -webkit-animation: shining 3000ms ease-in-out infinite;
+  animation: shining 3000ms ease-in-out infinite;
+}
+.star::after {
+  -webkit-transform: translateX(50%) rotateZ(-45deg);
+  transform: translateX(50%) rotateZ(-45deg);
+}
+
+/* Here we are adding location of each 
    nth-child, animations, delays, and 
    before and after effects to each 
    and every balls(stars) */
-  .star:nth-child(1) {
-    top: calc(50% - -119px);
-    left: calc(50% - 43px);
-    -webkit-animation-delay: 3000ms;
-    animation-delay: 3000ms;
-  }
-  .star:nth-child(1)::before,
-  .star:nth-child(1)::after {
-    -webkit-animation-delay: 3000ms;
-    animation-delay: 3000ms;
-  }
-  .star:nth-child(2) {
-    top: calc(50% - -43px);
-    left: calc(50% - 237px);
-    -webkit-animation-delay: 4000ms;
-    animation-delay: 4000ms;
-  }
-  .star:nth-child(2)::before,
-  .star:nth-child(2)::after {
-    -webkit-animation-delay: 4000ms;
-    animation-delay: 4000ms;
-  }
-  .star:nth-child(3) {
-    top: calc(50% - -220px);
-    left: calc(50% - 322px);
-    -webkit-animation-delay: 7000ms;
-    animation-delay: 7000ms;
-  }
-  .star:nth-child(3)::before,
-  .star:nth-child(3)::after {
-    -webkit-animation-delay: 7000ms;
-    animation-delay: 7000ms;
-  }
+.star:nth-child(1) {
+  top: calc(50% - -119px);
+  left: calc(50% - 43px);
+  -webkit-animation-delay: 3000ms;
+  animation-delay: 3000ms;
+}
+.star:nth-child(1)::before,
+.star:nth-child(1)::after {
+  -webkit-animation-delay: 3000ms;
+  animation-delay: 3000ms;
+}
+.star:nth-child(2) {
+  top: calc(50% - -43px);
+  left: calc(50% - 237px);
+  -webkit-animation-delay: 4000ms;
+  animation-delay: 4000ms;
+}
+.star:nth-child(2)::before,
+.star:nth-child(2)::after {
+  -webkit-animation-delay: 4000ms;
+  animation-delay: 4000ms;
+}
+.star:nth-child(3) {
+  top: calc(50% - -220px);
+  left: calc(50% - 322px);
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
+.star:nth-child(3)::before,
+.star:nth-child(3)::after {
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
 
-  .star:nth-child(4) {
-    top: calc(80% - 546px);
-    left: calc(50% - 12px);
-    -webkit-animation-delay: 5000ms;
-    animation-delay: 5000ms;
-  }
-  .star:nth-child(4)::before,
-  .star:nth-child(4)::after {
-    -webkit-animation-delay: 5000ms;
-    animation-delay: 5000ms;
-  }
+.star:nth-child(4) {
+  top: calc(80% - 546px);
+  left: calc(50% - 12px);
+  -webkit-animation-delay: 5000ms;
+  animation-delay: 5000ms;
+}
+.star:nth-child(4)::before,
+.star:nth-child(4)::after {
+  -webkit-animation-delay: 5000ms;
+  animation-delay: 5000ms;
+}
 
-  .star:nth-child(5) {
-    top: calc(50% - -29px);
-    left: calc(50% - 113px);
-    -webkit-animation-delay: 7000ms;
-    animation-delay: 7000ms;
-  }
-  .star:nth-child(5)::before,
-  .star:nth-child(5)::after {
-    -webkit-animation-delay: 7000ms;
-    animation-delay: 7000ms;
-  }
+.star:nth-child(5) {
+  top: calc(50% - -29px);
+  left: calc(50% - 113px);
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
+.star:nth-child(5)::before,
+.star:nth-child(5)::after {
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
 
-  .star:nth-child(6) {
-    top: calc(50% - -108px);
-    left: calc(50% - 160px);
-    -webkit-animation-delay: 3000ms;
-    animation-delay: 3000ms;
-  }
-  .star:nth-child(6)::before,
-  .star:nth-child(6)::after {
-    -webkit-animation-delay: 3000ms;
-    animation-delay: 3000ms;
-  }
-  .star:nth-child(7) {
-    top: calc(50% - 52px);
-    left: calc(50% - 72px);
-    -webkit-animation-delay: 7000ms;
-    animation-delay: 7000ms;
-  }
-  .star:nth-child(7)::before,
-  .star:nth-child(7)::after {
-    -webkit-animation-delay: 7000ms;
-    animation-delay: 7000ms;
-  }
+.star:nth-child(6) {
+  top: calc(50% - -108px);
+  left: calc(50% - 160px);
+  -webkit-animation-delay: 3000ms;
+  animation-delay: 3000ms;
+}
+.star:nth-child(6)::before,
+.star:nth-child(6)::after {
+  -webkit-animation-delay: 3000ms;
+  animation-delay: 3000ms;
+}
+.star:nth-child(7) {
+  top: calc(50% - 52px);
+  left: calc(50% - 72px);
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
+.star:nth-child(7)::before,
+.star:nth-child(7)::after {
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+}
 
-  /* This code will help to generate 
+/* This code will help to generate 
 effect in tail of star */
-  @keyframes tail {
-    0% {
-      width: 0;
-    }
-    30% {
-      width: 100px;
-    }
-    100% {
-      width: 0;
-    }
+@keyframes tail {
+  0% {
+    width: 0;
   }
-
-  /* This code will generate shining 
-effect in head of star */
-  @keyframes shining {
-    0% {
-      width: 0;
-    }
-    50% {
-      width: 30px;
-    }
-    100% {
-      width: 0;
-    }
+  30% {
+    width: 100px;
   }
-
-  /* Here we are adding webkit-animation 
-to head of star for shining */
-  @-webkit-keyframes shining {
-    0% {
-      width: 0;
-    }
-    50% {
-      width: 30px;
-    }
-    100% {
-      width: 0;
-    }
-  }
-
-  /* Here we are adding webkit-animation 
-to tail of star */
-  @-webkit-keyframes tail {
-    0% {
-      width: 0;
-    }
-    30% {
-      width: 100px;
-    }
-    100% {
-      width: 0;
-    }
-  }
-
-  /* Here we are adding webkit-animation 
-for shooting effect */
-  @-webkit-keyframes shooting {
-    0% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-    }
-    100% {
-      -webkit-transform: translateX(270px);
-      transform: translateX(270px);
-    }
-  }
-
-  /* Here we make shooting effect */
-  @keyframes shooting {
-    0% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-    }
-    100% {
-      -webkit-transform: translateX(270px);
-      transform: translateX(270px);
-    }
+  100% {
+    width: 0;
   }
 }
 
-/* ==About&projects page star/== */
+/* This code will generate shining 
+effect in head of star */
+@keyframes shining {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 30px;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* Here we are adding webkit-animation 
+to head of star for shining */
+@-webkit-keyframes shining {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 30px;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* Here we are adding webkit-animation 
+to tail of star */
+@-webkit-keyframes tail {
+  0% {
+    width: 0;
+  }
+  30% {
+    width: 100px;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* Here we are adding webkit-animation 
+for shooting effect */
+@-webkit-keyframes shooting {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(270px);
+    transform: translateX(270px);
+  }
+}
+
+/* Here we make shooting effect */
+@keyframes shooting {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(270px);
+    transform: translateX(270px);
+  }
+}
+
+/* ==About/== */
 
 .starysky {
   position: absolute;
@@ -1209,15 +976,15 @@ span:nth-child(2) {
 }
 
 span:nth-child(1) {
-  top: -10px;
-  right: -20px;
+  top: 0;
+  right: 0px;
   left: initial;
-  animation-delay: 2s;
+  animation-delay: 1s;
   animation-duration: 0.8s;
 }
 
 span:nth-child(3) {
-  top: -10px;
+  top: 80;
   right: 100px;
   left: initial;
   animation-delay: 0.4s;
@@ -1279,4 +1046,6 @@ span:nth-child(9) {
   width: 30px;
   height: 30px;
   margin-left: 15px;
+}
+
 }

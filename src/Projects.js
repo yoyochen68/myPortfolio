@@ -10,7 +10,7 @@ const Projects = () => {
             <div className="projects">
                 <div className='starysky'>
                     <span></span>
-  
+
                 </div>
                 <Header />
                 <section className="projectsSection">
