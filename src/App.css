@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Rosarivo&family=Work+Sans:wght@200&display=swap');
 
-html {
+/* html {
   background: url('/public/img/homeBg1.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+} */
+
+html,
+body {
+  overflow: hidden;
 }
 
 * {
@@ -51,6 +56,7 @@ html {
   width: 100%;
   height: 10vh;
   padding: auto;
+  background-color: transparent;
 }
 
 .menuBar {
@@ -132,11 +138,13 @@ html {
 
 /* FOOTER COMPONENT */
 .footer {
-  position: absolute;
+  position: fixed;
+  bottom: 0;
   width: 100%;
   height: 12vh;
   background-color: #40334f;
   font-size: 1rem;
+  /* margin-top:10vh */
 }
 
 .footerMenu {
@@ -230,11 +238,11 @@ html {
 .home {
   display: flex;
   height: 100vh;
-  width: 100vw;
-  /* background-image: url('/public/img/homeBg1.png');
+  /* width: 100vw; */
+  background-image: url('/public/img/homeBg1.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;  */
+  background-position-y: 80%;
 }
 
 .homeSection {
@@ -286,7 +294,7 @@ html {
 }
 
 @media screen and (max-width: 768px) {
-  html {
+  .home {
     background-position: 30%;
   }
 
@@ -336,6 +344,9 @@ html {
   background-size: cover;
   background-position: center;
   overflow: auto;
+
+  margin: 0 0 10vh 0;
+  padding: 0;
 }
 
 .projectsSection {
@@ -548,7 +559,7 @@ html {
 }
 
 .space {
-  height: 2rem;
+  height: 10rem;
 }
 
 /* @media screen and (max-width: 900px) {

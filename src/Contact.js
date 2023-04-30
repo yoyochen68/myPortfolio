@@ -6,8 +6,8 @@ const Contact = () => {
 
     return (
         <>
+            <Header />
             <div className="contact">
-                <Header />
                 <section className="contactSection">
                     <p className='contactTitle'>Get in Touch</p>
                     <p className='contactText'>

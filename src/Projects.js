@@ -7,12 +7,13 @@ const Projects = () => {
 
     return (
         <>
+
+            <Header />
             <div className="projects">
                 <div className='starysky'>
                     <span></span>
 
                 </div>
-                <Header />
                 <section className="projectsSection">
                     <p>Featured Projects</p>
                     <div className='projectsInfo'>

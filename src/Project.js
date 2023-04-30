@@ -9,12 +9,12 @@ const Project = () => {
     const { title, description, gitHubLink, websiteLink, figmaLink, images, imageLanscape, skills } = project;
     return (
         <>
+            <Header />
             <div className="singleProject">
-                <Header />
                 <div className='skyy'>
                     <span></span>
                     <span></span>
-       
+
                 </div>
                 <section className="singleProjectSection">
                     <div className="projectTitle">
