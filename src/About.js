@@ -5,37 +5,34 @@ import technologies from './technologies'
 
 
 const About = () => {
-    console.log(technologies)
-
     return (
         <>
+            <Header />
             <div className="about">
                 <div className='starysky'>
                     <span></span>
                     <span></span>
-                    <span></span>
                 </div>
-                <Header />
                 <section className="aboutSection">
                     <div className="intro">
-                        <h1>i am Yoyo Chen  <br/>
-                        A Full Stack Web developer  </h1>
+                        <h1>i am Yoyo Chen  <br />
+                            A Full Stack Web developer  </h1>
                         <div className='aboutMe'>
-                        <p>
-                            I am driven by a passion for creating engaging and user-friendly web applications that provide seamless experiences for users. With a deep understanding of front-end and back-end technologies, I am skilled in developing responsive and dynamic web interfaces that are optimized for speed and performance.
+                            <p>
+                                I am driven by a passion for creating engaging and user-friendly web applications that provide seamless experiences for users. With a deep understanding of front-end and back-end technologies, I am skilled in developing responsive and dynamic web interfaces that are optimized for speed and performance.
 
-                        </p>
+                            </p>
 
-                        <p>
-                            I am committed to staying up-to-date with the latest trends and advancements in web development to ensure that my work is always at the cutting edge.
+                            <p>
+                                I am committed to staying up-to-date with the latest trends and advancements in web development to ensure that my work is always at the cutting edge.
 
-                        </p>
-                        <p>
-                            Whether working independently or as part of a team, I thrive in fast-paced, deadline-driven environments and always approach my work with a solutions-oriented mindset. I pride myself on my ability to collaborate with designers, developers, and stakeholders to deliver high-quality web applications that meet the needs of both clients and end-users.
-                        </p>
-                        <p>
-                            Ultimately, my goal as a web developer is to create impactful, innovative solutions that improve the digital landscape and empower users to achieve their goals online.
-                        </p>
+                            </p>
+                            <p>
+                                Whether working independently or as part of a team, I thrive in fast-paced, deadline-driven environments and always approach my work with a solutions-oriented mindset. I pride myself on my ability to collaborate with designers, developers, and stakeholders to deliver high-quality web applications that meet the needs of both clients and end-users.
+                            </p>
+                            <p>
+                                Ultimately, my goal as a web developer is to create impactful, innovative solutions that improve the digital landscape and empower users to achieve their goals online.
+                            </p>
                         </div>
                     </div>
                     <div className="imgsect">
