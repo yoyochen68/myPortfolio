@@ -236,18 +236,20 @@ body {
 
   .headshot {
     position: absolute;
-    top: 20%;
-    right: 20%;
+    top: 15%;
+    right: 10%;
     height: 280px;
     opacity: 0.5;
   }
 
   .introText {
     font-size: 1.5rem;
+    color: #0e3e52;
   }
 
   .desText {
     font-size: 1rem;
+    color: #0a3448;
   }
 }
 
@@ -841,6 +843,10 @@ body {
   .horizontal {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+
+  .vertical {
+    grid-template-columns: 1fr 1fr;
   }
 
   .signleProjectBox {
